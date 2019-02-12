@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>HTML & CSS HOMEWORK</title>
 </head>
-<body>
-    <form action="" method="post">
-        <input id="sign-up" type="radio" name="entry">
-        <label for="sign-up">SIGN UP</label>
-        <input id="sign-in" type="radio" name="entry">
-        <label for="sign-in">SIGN IN</label><br>
-        <input id="sign-up-mobile-phone" type="tel" name="mobile-phone" placeholder="Mobile Phone"><br>
-        <input id="sign-up-email" type="email" name="email" placeholder="Email ID"><br>
-        <input id="sign-up-password" type="password" name="password" placeholder="Password"><br>
-        <input id="sign-up-agreement" type="checkbox" name="agreement">
-        <label for="sign-up-agreement">I agree to terms and conditions</label><br>
-        <input type="submit" value="REGISTER">
-      </form>
+<body class="page">
+    <div class="layout-positioner">
+            <input class="button__sign-up" id="button__sign-up-id" type="radio" name="entry" checked>
+            <label class="button__label" for="button__sign-up-id">SIGN UP</label>
+            <input class="button__sign-in" id="button__sign-in-id" type="radio" name="entry">
+            <label class="button__label" for="button__sign-in-id">SIGN IN</label><br>
+        <form class="form__sign-up" id="form__sign-up-id" action="https://reqres.in/api/register" method="POST">
+            <input class="form__item__input-text form__item__sign-up-mobile-phone" id="form__item__sign-up-mobile-phone-id" type="tel" name="mobile-phone" placeholder="Mobile Phone"><br>
+            <input class="form__item__input-text form__item__sign-up-email" id="form__item__sign-up-email-id" type="email" name="email" placeholder="Email ID"><br>
+            <input class="form__item__input-text form__item__sign-up-email" id="form__item__sign-up-email-id" type="password" name="password" placeholder="Password"><br>
+            <input class="form__item__input-checkbox" id="form__item__sign-up-agreement-id" type="checkbox" name="agreement">
+            <label for="form__item__sign-up-agreement-id">I agree to terms and conditions</label><br>
+            <button class="form__item__button form__item__button-submit" type="submit">REGISTER</button>
+        </form>
+        <form class="form__sign-in" id="form__sign-in-id" action="https://reqres.in/api/register" method="POST">
+            <input class="form__item__input-text form__item__sign-in-email" id="form__item__sign-in-email-id" type="email" name="email" placeholder="Email ID"><br>
+            <input class="form__item__input-text form__item__sign-in-password" id="form__item__sign-in-password-id" type="password" name="password" placeholder="Password"><br>
+            <input class="form__item__input-checkbox" id="form__item__sign-in-keep-login-id" type="checkbox" name="agreement">
+            <label for="form__item__sign-in-keep-login-id">Keep me logged in</label><br>
+            <button class="form__item__button form__item__button-login" type="submit">LOGIN</button><br>
+            <div class="form__item-link-positioner">
+                <a class="form__item-link-forgot-password" href="#">Forgot password?</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
