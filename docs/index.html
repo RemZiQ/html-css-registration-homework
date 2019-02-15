@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html-form" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>HTML & CSS HOMEWORK</title>
 </head>
-<body class="page">
+<body class="page-form">
     <div class="layout-positioner">
-            <input class="button__sign-up" id="button__sign-up-id" type="radio" name="entry" checked>
-            <label class="button__label" for="button__sign-up-id">SIGN UP</label>
-            <input class="button__sign-in" id="button__sign-in-id" type="radio" name="entry">
-            <label class="button__label" for="button__sign-in-id">SIGN IN</label><br>
+        <div class="form">
+            <input class="form__button-sign-up" id="button__sign-up-id" type="radio" name="entry" checked>
+            <label class="form__button-label" for="button__sign-up-id">SIGN UP</label>
+            <input class="form__button-sign-in" id="button__sign-in-id" type="radio" name="entry">
+            <label class="form__button-label" for="button__sign-in-id">SIGN IN</label><br>
         <form class="form__sign-up" id="form__sign-up-id" action="https://reqres.in/api/register" method="POST">
-            <input class="form__item__input-text form__item__sign-up-mobile-phone" id="form__item__sign-up-mobile-phone-id" type="tel" name="mobile-phone" placeholder="Mobile Phone"><br>
-            <input class="form__item__input-text form__item__sign-up-email" id="form__item__sign-up-email-id" type="email" name="email" placeholder="Email ID"><br>
-            <input class="form__item__input-text form__item__sign-up-email" id="form__item__sign-up-email-id" type="password" name="password" placeholder="Password"><br>
-            <input class="form__item__input-checkbox" id="form__item__sign-up-agreement-id" type="checkbox" name="agreement">
-            <label for="form__item__sign-up-agreement-id">I agree to terms and conditions</label><br>
-            <button class="form__item__button form__item__button-submit" type="submit">REGISTER</button>
+            <input class="form__input-text form-sign-up__mobile-phone" id="form__item__sign-up-mobile-phone-id" 
+                type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="requested format 123-45-678-90-00" 
+                name="mobile-phone" placeholder="Mobile Phone" required><br>
+            <input class="form__input-text form-sign-up__email" id="form__item__sign-up-email-id" 
+                type="email" name="email" placeholder="Email ID" required><br>
+            <input class="form__input-text form-sign-up__password" id="form__item__sign-up-email-id" 
+                type="password" name="password" placeholder="Password" required><br>
+            <div class="form__input-checkbox">
+                <label>
+                    <input type="checkbox" required>
+                    <span class="fa fa-check"></span>
+                    I agree to terms and conditions
+                </label>
+            </div>
+            <button class="form__button form__button-submit" type="submit">register</button>
         </form>
         <form class="form__sign-in" id="form__sign-in-id" action="https://reqres.in/api/register" method="POST">
-            <input class="form__item__input-text form__item__sign-in-email" id="form__item__sign-in-email-id" type="email" name="email" placeholder="Email ID"><br>
-            <input class="form__item__input-text form__item__sign-in-password" id="form__item__sign-in-password-id" type="password" name="password" placeholder="Password"><br>
-            <input class="form__item__input-checkbox" id="form__item__sign-in-keep-login-id" type="checkbox" name="agreement">
-            <label for="form__item__sign-in-keep-login-id">Keep me logged in</label><br>
-            <button class="form__item__button form__item__button-login" type="submit">LOGIN</button><br>
+            <input class="form__input-text form__item__sign-in-email" id="form__item__sign-in-email-id"
+                type="email" name="email" placeholder="Email ID" required><br>
+            <input class="form__input-text form__item__sign-in-password" id="form__item__sign-in-password-id"
+                type="password" name="password" placeholder="Password" required><br>
+            <div class="form__input-checkbox">
+                <label>
+                    <input type="checkbox">
+                    <span class="fa fa-check"></span>
+                    Keep me logged in
+                </label>
+            </div>
+            <button class="form__button form__button-login" type="submit">login</button><br>
             <div class="form__item-link-positioner">
                 <a class="form__item-link-forgot-password" href="#">Forgot password?</a>
             </div>
         </form>
+        </div>
     </div>
 </body>
 </html>
