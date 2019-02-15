@@ -13,13 +13,13 @@
 <body class="page-form">
     <div class="layout-positioner">
         <div class="form">
-            <input class="form__button-sign-up" id="button__sign-up-id" type="radio" name="entry" checked>
-            <label class="form__button-label" for="button__sign-up-id">SIGN UP</label>
-            <input class="form__button-sign-in" id="button__sign-in-id" type="radio" name="entry">
-            <label class="form__button-label" for="button__sign-in-id">SIGN IN</label><br>
+            <input class="form__button-sign-in" id="button__sign-in-id" type="radio" name="entry" checked>
+            <label class="form__button-label" for="button__sign-in-id">SIGN IN</label>
+            <input class="form__button-sign-up" id="button__sign-up-id" type="radio" name="entry">
+            <label class="form__button-label" for="button__sign-up-id">SIGN UP</label><br>
         <form class="form__sign-up" id="form__sign-up-id" action="https://reqres.in/api/register" method="POST">
             <input class="form__input-text form-sign-up__mobile-phone" id="form__item__sign-up-mobile-phone-id" 
-                type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="requested format 123-45-678-90-00" 
+                type="tel" inputmode="numeric" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="requested format 123-45-678-90-00" 
                 name="mobile-phone" placeholder="Mobile Phone" required><br>
             <input class="form__input-text form-sign-up__email" id="form__item__sign-up-email-id" 
                 type="email" name="email" placeholder="Email ID" required><br>

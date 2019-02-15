@@ -22,16 +22,16 @@
 
 /* choose form buttons styles and visability of forms */
 
-.form__sign-in {
+.form__sign-up {
     display: none;
 }
 .form__button-sign-up:checked ~ .form__sign-in{
-    display: block;
-}
-.form__button-sign-up:checked ~ .form__sign-up{
     display: none;
 }
-.form__button-sign-in:checked ~ .form__button-label{
+.form__button-sign-up:checked ~ .form__sign-up{
+    display: block;
+}
+.form__button-sign-in:checked + .form__button-label{
     border-bottom: 3px solid #f47e16;
 }
 .form__button-sign-up:checked + .form__button-label{
