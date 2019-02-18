@@ -1,0 +1,182 @@
+.html-form {
+    font-size: 16px;
+}
+.page-form {
+    background-image: url(images/Layer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+.layout-positioner {
+    box-sizing: border-box;
+    width: 33.5%;
+    margin: 12.15vh auto;
+    color: white;
+}
+.form{
+    height: 75.7vh;
+    max-height: 600px;
+    padding: 9% 8.25% 11.6% 7.3%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* choose form buttons styles and visability of forms */
+
+.form__sign-up {
+    display: none;
+}
+.form__button-sign-up:checked ~ .form__sign-in{
+    display: none;
+}
+.form__button-sign-up:checked ~ .form__sign-up{
+    display: block;
+}
+.form__button-sign-in:checked + .form__button-label{
+    border-bottom: 3px solid #f47e16;
+}
+.form__button-sign-up:checked + .form__button-label{
+    border-bottom: 3px solid #f47e16;
+}
+
+/* sign-in and sign-up form styles */
+
+.form__input-text {
+    width: 100%;
+    margin-bottom: 9.027vh;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background: none;
+    border-style: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.0625rem;
+}
+.form__button-sign-up{
+    display: none;
+}
+.form__button-sign-in{
+    display: none;
+}
+.form__button-label {
+    display: inline-block;
+    margin-bottom: 12.5vh;
+    margin-right: 10%;
+    padding-bottom: 5px;
+    font-size: 1.375rem;
+}
+.form__item__input-text:not(:last-of-type){
+    margin-bottom: 6.25vh;
+}
+.form__button{
+    display: block;
+    box-sizing: border-box;
+    width: 15.23vw;
+    height: 5.555vh;
+    margin: 0 auto;
+    background-color: #f47e16;
+    border-style: none;
+    border-right: 3vw solid #f47e16;
+    border-left: 3vw solid #f47e16;
+    border-bottom: 1.6875vh solid #f47e16;
+    border-bottom: 1.6875vh solid #f47e16;
+    border-radius: 2vw;
+    color: white;
+    line-height: 5.555vh;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.form__item-link-positioner{
+    margin-top: 5.5%;
+    text-align: center;
+}
+.form__item-link-forgot-password{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+/* style color placeholder */
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+}
+  
+  :-ms-input-placeholder { 
+    color: white;
+}
+  
+  ::-ms-input-placeholder {
+    color: white;
+}
+.form__input-text:active, .form__input-text:focus{
+    outline: none;
+}
+.form__button:active, .form__button:focus{
+    outline: none;
+    background-color: white;
+    border-color: white;
+    color: #f47e16;
+}
+/* style for checkbox */
+
+.form__input-checkbox{
+    margin-bottom: 5.55vh;
+}
+.form__input-checkbox label {
+    min-height: 21px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    line-height:22px;
+    user-select: none;
+  }
+  
+  .form__input-checkbox span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -20px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .form__input-checkbox span:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center !important;
+    font-size: 12px;
+    line-height: 18px;
+    vertical-align: middle;
+  }
+  
+  .form__input-checkbox input[type=checkbox]{
+    position:absolute;
+    margin: 4px 0 0;
+    opacity:0;
+  }
+  
+  .form__input-checkbox input[type=checkbox]:checked {
+  color: #fff;
+  transition: color 0.3s ease-out;
+  }
+  
+  .form__input-checkbox input[type=checkbox]:checked + span{
+  border-color: #2159a7;
+  background-color: #2159a7;
+  }
+  
+  .form__input-checkbox input[type=checkbox]:checked + span:before{
+    color: #fff;
+  opacity: 1;
+  transition: color 0.3s ease-out;
+  }
